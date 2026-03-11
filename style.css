@@ -1,0 +1,116 @@
+/* 1. Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  background: #000;
+  background-image: url("/assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+}
+
+/* 2. Layout Components */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.45)),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.03), transparent 55%);
+  pointer-events: none;
+}
+
+.hero {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+/* 3. Typography */
+.name {
+  display: inline-block;
+  font-family: "Charis SIL", serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  color: white;
+  letter-spacing: 0.02em;
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.18),
+    0 8px 30px rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+}
+
+/* 4. Navigation */
+.nav {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.55rem);
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 4px;
+  text-shadow: 0 5px 18px rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+/* 5. Interaction & Animation */
+.nav-link:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.animate-rise {
+  opacity: 0;
+  filter: blur(10px);
+  clip-path: inset(0 50% 0 50%);
+  transform: translateY(0);
+  will-change: transform, opacity, filter, clip-path;
+}
