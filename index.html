@@ -11,29 +11,100 @@
 
   <link rel="stylesheet" href="/style.css">
 </head>
-
 <body>
-
+  <div class="background-layer"></div>
   <div class="overlay"></div>
 
-  <section class="hero">
-    <h1 class="name animate-rise" 
-        data-delay="0" 
-        data-duration="2400" 
-        data-move="0.22">
-      Mayank Neupane
-    </h1>
+  <!-- Floating header that appears on scroll -->
+  <header class="scroll-header" id="scrollHeader">
+    <div class="scroll-header-inner">
+      <a href="#home" class="header-logo">Mayank Neupane</a>
 
-    <nav class="nav">
-      <a href="/" class="nav-link animate-rise active" data-delay="1100">Home</a>
-      <a href="/about.html" class="nav-link animate-rise" data-delay="1250">About</a>
-      <a href="/portfolio.html" class="nav-link animate-rise" data-delay="1400">Portfolio</a>
-      <a href="/resume.html" class="nav-link animate-rise" data-delay="1550">Resume</a>
-      <a href="mailto:meetmemayank04@gmail.com" class="nav-link animate-rise" data-delay="1700">Contact</a>
-    </nav>
+      <nav class="header-nav">
+        <a href="#home" class="header-link">Home</a>
+        <a href="#about" class="header-link">About</a>
+        <a href="#portfolio" class="header-link">Portfolio</a>
+        <a href="/assets/Mayank_C(V5).pdf" class="header-link" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="mailto:meetmemayank04@gmail.com" class="header-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1
+        class="name animate-rise"
+        data-delay="0"
+        data-duration="2400"
+        data-move="0.22"
+      >
+        Mayank Neupane
+      </h1>
+
+      <nav class="nav">
+        <a href="#about" class="nav-link animate-rise" data-delay="950" data-duration="900" data-move="0.18">About</a>
+        <a href="#portfolio" class="nav-link animate-rise" data-delay="1100" data-duration="900" data-move="0.18">Portfolio</a>
+        <a href="/assets/Mayank_C(V5).pdf" class="nav-link animate-rise" data-delay="1250" data-duration="900" data-move="0.18" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="mailto:meetmemayank04@gmail.com" class="nav-link animate-rise" data-delay="1400" data-duration="900" data-move="0.18">Contact</a>
+      </nav>
+    </div>
   </section>
 
-  <script type="module" src="/script.js"></script>
+  <section class="content-section" id="about">
+    <div class="section-card">
+      <h2>About</h2>
+      <p>
+        I am a Computer Engineering student with an interest in digital design, embedded systems,
+        software development, and building projects that combine creativity with technical problem-solving.
+      </p>
+      <p>
+        I enjoy working on projects that challenge me to think through both the system-level design
+        and the small implementation details, whether that is in hardware, software, or interactive web experiences.
+      </p>
+    </div>
+  </section>
 
+  <section class="content-section" id="portfolio">
+    <div class="section-card">
+      <h2>Portfolio</h2>
+      <p>
+        This section can showcase your featured projects, technical work, engineering builds,
+        software applications, and any other experience you want to highlight.
+      </p>
+      <p>
+        You can later turn this into project cards, animated panels, or a more interactive layout.
+      </p>
+    </div>
+  </section>
+
+  <div
+  class="social-container animate-rise"
+  data-delay="500"
+  data-duration="1400"
+  data-move="0.22"
+>
+  <div class="social-links">
+    <a href="https://github.com/Mayankneup" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/social/github.png" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/mayankneupane" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/social/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <a href="mailto:meetmemayank04@gmail.com">
+      <img src="/assets/social/email.png" alt="Email">
+    </a>
+  </div>
+
+  <div class="social-line"></div>
+</div>
+
+
+  <footer class="copyright">
+    © 2026 Mayank Neupane. All rights reserved.
+  </footer>
+
+  <script type="module" src="/script.js"></script>
 </body>
 </html>
