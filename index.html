@@ -15,13 +15,11 @@
   <div class="background-layer"></div>
   <div class="overlay"></div>
 
-  <!-- Floating header that appears on scroll -->
   <header class="scroll-header" id="scrollHeader">
     <div class="scroll-header-inner">
       <a href="#home" class="header-logo">Mayank Neupane</a>
 
       <nav class="header-nav">
-        <a href="#home" class="header-link">Home</a>
         <a href="#about" class="header-link">About</a>
         <a href="#portfolio" class="header-link">Portfolio</a>
         <a href="/assets/Mayank_C(V5).pdf" class="header-link" target="_blank" rel="noopener noreferrer">Resume</a>
@@ -31,82 +29,152 @@
   </header>
 
   <section class="hero" id="home">
-    <div class="hero-inner">
-      <h1
-        class="name animate-rise"
-        data-delay="0"
-        data-duration="2400"
-        data-move="0.22"
-      >
-        Mayank Neupane
-      </h1>
+  <div class="hero-inner">
+    <h1 class="name">Mayank Neupane</h1>
 
-      <nav class="nav">
-        <a href="#about" class="nav-link animate-rise" data-delay="950" data-duration="900" data-move="0.18">About</a>
-        <a href="#portfolio" class="nav-link animate-rise" data-delay="1100" data-duration="900" data-move="0.18">Portfolio</a>
-        <a href="/assets/Mayank_C(V5).pdf" class="nav-link animate-rise" data-delay="1250" data-duration="900" data-move="0.18" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="mailto:meetmemayank04@gmail.com" class="nav-link animate-rise" data-delay="1400" data-duration="900" data-move="0.18">Contact</a>
-      </nav>
-    </div>
-  </section>
-
-  <section class="content-section" id="about">
-  <div class="section-card about-card">
-    <p class="section-eyebrow">About Me</p>
-    <h2>Curious about building things that connect software, hardware, and ideas.</h2>
-    <p class="about-lead">
-      Hi, I’m Mayank Neupane, an engineering student who enjoys working across software,
-      hardware, and problem solving. I like building systems, learning how things work,
-      and turning ideas into projects that feel practical and well designed.
-    </p>
-
-    <div class="about-highlights">
-      <div class="about-block">
-        <h3>How I think</h3>
-        <p>
-          I enjoy breaking problems down, finding patterns, and understanding how smaller
-          pieces come together to build a complete system.
-        </p>
-      </div>
-
-      <div class="about-block">
-        <h3>What I enjoy</h3>
-        <p>
-          From software development to hardware projects, I’m drawn to work that combines
-          technical depth, creativity, and hands-on building.
-        </p>
-      </div>
-
-      <div class="about-block">
-        <h3>Beyond engineering</h3>
-        <p>
-          Outside of academics, I love exploring new cities and cultures. Traveling is one
-          of the ways I keep learning and seeing the world from new perspectives.
-        </p>
-      </div>
-    </div>
+    <nav class="nav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="/assets/Mayank_C(V5).pdf" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="mailto:meetmemayank04@gmail.com" class="nav-link">Contact</a>
+    </nav>
   </div>
 </section>
 
-    <section class="content-section" id="portfolio">
-    <div class="about-card">
-    <p class="section-eyebrow">Portfolio</p>
-      <p>
-        This section can showcase your featured projects, technical work, engineering builds,
-        software applications, and any other experience you want to highlight.
+  <section class="content-section" id="about">
+    <div class="section-card about-card">
+      <p class="section-eyebrow">About Me</p>
+      <h2>Curious about building things that connect software, hardware, and ideas.</h2>
+      <p class="about-lead">
+        Hi, I’m Mayank Neupane, an engineering student who enjoys working across software,
+        hardware, and problem solving. I like building systems, learning how things work,
+        and turning ideas into projects that feel practical and well designed.
       </p>
-      <p>
-        You can later turn this into project cards, animated panels, or a more interactive layout.
-      </p>
+
+      <div class="about-highlights">
+        <div class="about-block">
+          <h3>How I think</h3>
+          <p>
+            I enjoy breaking problems down, finding patterns, and understanding how smaller
+            pieces come together to build a complete system.
+          </p>
+        </div>
+
+        <div class="about-block">
+          <h3>What I enjoy</h3>
+          <p>
+            From software development to hardware projects, I’m drawn to work that combines
+            technical depth, creativity, and hands-on building.
+          </p>
+        </div>
+
+        <div class="about-block">
+          <h3>Beyond engineering</h3>
+          <p>
+            Outside of academics, I love exploring new cities and cultures. Traveling is one
+            of the ways I keep learning and seeing the world from new perspectives.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div
-  class="social-container animate-rise"
-  data-delay="500"
-  data-duration="1400"
-  data-move="0.22"
->
+    <section class="content-section" id="portfolio">
+    <div class="section-card">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2>Projects & Engineering Work</h2>
+
+        <div class="project-grid">
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>Custom CPU Design</h3>
+            <p>
+                Designed and verified a custom CPU in SystemVerilog, focusing on datapath logic,
+                instruction execution, waveform debugging, and verification through test benches.
+            </p>
+            <span class="project-tech">SystemVerilog · GTKWave · Test Benches · Scripting</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/cpu.png" alt="Custom CPU Design thumbnail">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>FPGA Vehicle Project</h3>
+            <p>
+                Built an FPGA-controlled vehicle involving hardware communication, logic validation,
+                soldering, and waveform-based debugging for reliable system behavior.
+            </p>
+            <span class="project-tech">SystemVerilog · Test Benches · Soldering · Hardware Communication · GTKWave</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/fpga-car.png" alt="FPGA Vehicle Project thumbnail">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>CRUD System</h3>
+            <p>
+                Developed a CRUD-based application for structured data storage, retrieval, updating,
+                and record management with database interaction.
+            </p>
+            <span class="project-tech">C · SQL</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/crud.png" alt="CRUD System thumbnail">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>Data Analysis Platform <em>(In Progress)</em></h3>
+            <p>
+                Currently building a Python-based data analysis project focused on pattern discovery,
+                insight generation, and machine learning integration.
+            </p>
+            <span class="project-tech">Python · Machine Learning</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/data-analysis.png" alt="Data Analysis Project thumbnail">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>Flappy Bird</h3>
+            <p>
+                Recreated the Flappy Bird game with interactive mechanics, movement logic,
+                and collision handling using Python.
+            </p>
+            <span class="project-tech">Python</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/flappy-bird.png" alt="Flappy Bird thumbnail">
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-text">
+            <h3>Automated Plant Watering System</h3>
+            <p>
+                Designed two iterations of an automated watering system with live monitoring,
+                system feedback, and data representation for improved responsiveness.
+            </p>
+            <span class="project-tech">Java · MATLAB · Live Data Representation</span>
+            </div>
+            <div class="project-image">
+            <img src="/assets/projects/plant-watering.png" alt="Automated Plant Watering System thumbnail">
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+  <div class="social-container">
   <div class="social-links">
     <a href="https://github.com/Mayankneup" target="_blank" rel="noopener noreferrer">
       <img src="/assets/social/github.png" alt="GitHub">
@@ -123,7 +191,6 @@
 
   <div class="social-line"></div>
 </div>
-
 
   <footer class="copyright">
     © 2026 Mayank Neupane. All rights reserved.
