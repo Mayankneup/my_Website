@@ -26,6 +26,7 @@ body {
 
 
 /* Permanent Background Layers */
+
 .background-layer {
   position: fixed;
   inset: 0;
@@ -45,6 +46,7 @@ body {
 
 
 /* Scroll Header */
+
 .scroll-header {
   position: fixed;
   top: 24px;
@@ -81,7 +83,7 @@ body {
 .header-logo {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.96);
-  font-family: "Charis SIL", serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.45rem;
   letter-spacing: 0.03em;
 }
@@ -101,12 +103,14 @@ body {
 
 
 /* Hero Section */
+
 .hero {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 16vh 20px 10vh;
+  position: relative;
 }
 
 .hero-inner {
@@ -179,11 +183,12 @@ body {
 
 
 /* Content Sections */
+
 .content-section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 14vh 24px 220px;
+  padding: 14vh 24px 120px;
 }
 
 
@@ -206,7 +211,7 @@ body {
 }
 
 
-/* About */
+/* About Section */
 
 .section-eyebrow {
   margin-bottom: 16px;
@@ -218,7 +223,7 @@ body {
 
 .about-card h2,
 .section-card h2 {
-  font-family: "Charis SIL", serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(1.78rem, 2.15vw, 2.18rem);
   line-height: 1.12;
   margin-bottom: 18px;
@@ -258,7 +263,8 @@ body {
 }
 
 
-/* Social Panel */
+/* Desktop Social Panel */
+
 .social-container {
   position: fixed;
   bottom: 28px;
@@ -296,7 +302,9 @@ body {
   border-radius: 999px;
 }
 
+
 /* Portfolio */
+
 .project-grid {
   display: flex;
   flex-direction: column;
@@ -365,46 +373,28 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-    gap: 16px;
-    padding: 20px;
-  }
 
-  .project-image {
-    width: 100%;
-    min-width: 100%;
-    height: 180px;
-  }
-
-  .project-card h3 {
-    font-size: 1.28rem;
-  }
-
-  .project-card p {
-    font-size: 0.98rem;
-  }
-
-  .project-tech {
-    font-size: 0.88rem;
-  }
-}
-/* Copyright */
+/* Footer */
 
 .copyright {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  padding: 24px 20px;
+  text-align: center;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.68);
+  background: rgba(10, 12, 18, 0.65);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footer-social {
+  display: none;
 }
 
 
-/* Tablet / Smaller Desktop */
+/* Tablet */
 
 @media (max-width: 1024px) {
   .scroll-header-inner {
@@ -416,17 +406,40 @@ body {
   }
 
   .content-section {
-    padding: 16vh 20px 600px;
+    padding: 16vh 20px 120px;
   }
 
   .about-card,
   .section-card {
     padding: 54px 40px;
   }
+
+  .social-container {
+    display: none;
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 14px;
+  }
+
+  .footer-social img {
+    width: 34px;
+    height: 34px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+  }
+
+  .footer-social img:hover {
+    transform: scale(1.08);
+  }
 }
 
 
-/*  Mobile */
+/* Mobile */
 
 @media (max-width: 768px) {
   .scroll-header {
@@ -475,7 +488,7 @@ body {
   }
 
   .content-section {
-    padding: 14vh 16px 320px;
+    padding: 14vh 16px 120px;
   }
 
   .about-card,
@@ -516,32 +529,44 @@ body {
     margin-top: 24px;
   }
 
-  .social-container {
-    right: 18px;
-    bottom: 18px;
-    gap: 12px;
+  .project-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
   }
 
-  .social-links {
-    gap: 12px;
+  .project-image {
+    width: 100%;
+    min-width: 100%;
+    height: 180px;
   }
 
-  .social-links img {
-    width: 40px;
-    height: 40px;
+  .project-card h3 {
+    font-size: 1.28rem;
   }
 
-  .social-line {
-    height: 160px;
-    width: 2px;
+  .project-card p {
+    font-size: 0.98rem;
+  }
+
+  .project-tech {
+    font-size: 0.88rem;
+  }
+
+  .footer-social {
+    gap: 18px;
+    margin-bottom: 12px;
+  }
+
+  .footer-social img {
+    width: 32px;
+    height: 32px;
   }
 
   .copyright {
-    bottom: 12px;
+    padding: 20px 16px;
     font-size: 0.72rem;
     letter-spacing: 0.05em;
-    text-align: center;
-    width: 90%;
   }
 }
 
@@ -568,5 +593,14 @@ body {
 
   .section-eyebrow {
     font-size: 1rem;
+  }
+
+  .footer-social {
+    gap: 16px;
+  }
+
+  .footer-social img {
+    width: 30px;
+    height: 30px;
   }
 }
