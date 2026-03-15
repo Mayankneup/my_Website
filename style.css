@@ -30,7 +30,7 @@ body {
 .background-layer {
   position: fixed;
   inset: 0;
-  background: #000 url("/assets/background.jpeg") center center / cover no-repeat;
+  background: #000 url("/assets/essentials/background.jpeg") center center / cover no-repeat;
   z-index: -2;
 }
 
@@ -46,6 +46,12 @@ body {
 
 
 /* Scroll Header */
+.header-logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
 
 .scroll-header {
   position: fixed;
@@ -267,7 +273,7 @@ body {
 
 .social-container {
   position: fixed;
-  bottom: 28px;
+  bottom: 0px;
   right: 40px;
   display: flex;
   flex-direction: column;
