@@ -402,7 +402,7 @@ body {
 
 /* Tablet */
 
-@media (max-width: 1024px) {
+@media (max-width: 1190px) {
   .scroll-header-inner {
     padding: 16px 22px;
   }
