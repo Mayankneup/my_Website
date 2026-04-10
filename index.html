@@ -11,202 +11,223 @@
 </head>
 <body>
   <div class="background-layer"></div>
+  <canvas id="circuit-canvas"></canvas>
   <div class="overlay"></div>
 
-  <header class="scroll-header" id="scrollHeader">
-    <div class="scroll-header-inner">
-      <a href="#home" class="header-logo">
-        <img src="/assets/essentials/MayankNeupane.png" alt="Mayank Neupane Logo">
-      </a>
-      <nav class="header-nav">
-        <a href="#about" class="header-link">About</a>
-        <a href="#portfolio" class="header-link">Portfolio</a>
-        <a href="/assets/Mayank_C.pdf" class="header-link" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="mailto:meetmemayank04@gmail.com" class="header-link">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header class="scroll-header" id="scrollHeader">
+      <div class="scroll-header-inner">
+        <a href="#home" class="header-logo" title="Return_to_Root">
+          <img src="/assets/essentials/MayankNeupane.png" alt="Mayank Neupane System Logo">
+        </a>
+        
+        <nav class="header-nav">
+          <a href="#about" class="header-link"><span class="nav-num">01.</span> About</a>
+          <a href="#portfolio" class="header-link"><span class="nav-num">02.</span> Projects</a>
+          <a href="/assets/essentials/Mayank_C(V5).pdf" class="header-link" target="_blank" rel="noopener noreferrer"><span class="nav-num">03.</span> Resume.pdf</a>
+          <a href="mailto:meetmemayank04@gmail.com" class="header-link"><span class="nav-num">04.</span> Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <section class="hero" id="home">
+    <section class="hero" id="home">
     <div class="hero-inner">
-      <h1 class="name">Mayank Neupane</h1>
+      <div class="hero-sys-status">
+        <span class="pulse-dot"></span> SYSTEM_ONLINE // ROOT_ACCESS_GRANTED
+      </div>
 
-      <nav class="nav">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#portfolio" class="nav-link">Portfolio</a>
-        <a href="/assets/essentials/Mayank_C(V5).pdf" class="nav-link" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a href="mailto:meetmemayank04@gmail.com" class="nav-link">Contact</a>
+      <h1 class="name">Mayank Neupane</h1>
+      
+      <p class="hero-subtitle">
+        <span class="bracket">[</span> Computer Engineering Student <span class="bracket">]</span>
+      </p>
+
+      <nav class="nav hero-nav">
+        <a href="#about" class="hero-btn">Initialize_About()</a>
+        <a href="#portfolio" class="hero-btn">View_Projects()</a>
+        <a href="/assets/essentials/Mayank_C(V5).pdf" class="hero-btn outline" target="_blank" rel="noopener noreferrer">Extract_Resume.pdf</a>
       </nav>
     </div>
   </section>
 
   <section class="content-section" id="about">
     <div class="section-card about-card">
-      <p class="section-eyebrow">About Me</p>
-      <h2>Curious about building things that connect software, hardware, and ideas.</h2>
-
-      <p class="about-lead">
-        Hi, I’m Mayank Neupane, an engineering student who enjoys working across software,
-        hardware, and problem solving. I like building systems, learning how things work,
-        and turning ideas into projects that feel practical and well designed.
-      </p>
-
-      <div class="about-highlights">
-        <div class="about-block">
-          <h3>How I think</h3>
-          <p>
-            I enjoy breaking problems down, finding patterns, and understanding how smaller
-            pieces come together to build a complete system.
-          </p>
-        </div>
-
-        <div class="about-block">
-          <h3>What I enjoy</h3>
-          <p>
-            From software development to hardware projects, I’m drawn to work that combines
-            technical depth, creativity, and hands-on building.
-          </p>
-        </div>
-
-        <div class="about-block">
-          <h3>Beyond engineering</h3>
-          <p>
-            Outside of academics, I love exploring new cities and cultures. Traveling is one
-            of the ways I keep learning and seeing the world from new perspectives.
-          </p>
-        </div>
+      
+      <div class="card-header">
+        <p class="section-metadata">// 01. OVERVIEW</p>
+        <div class="status-indicator">SYSTEM_ACTIVE</div>
       </div>
-    </div>
+
+      <div class="about-grid">
+        
+        <div class="about-main">
+          <h2>Curious about building things that connect <span class="highlight">software</span>, <span class="highlight">hardware</span>, and ideas.</h2>
+          <p class="about-lead">
+            Hi, I’m Mayank Neupane, an engineering student who enjoys working across software, 
+            hardware, and problem solving. I like building systems, learning how things work, 
+            and turning ideas into projects that feel practical and well-designed.
+          </p>
+        </div>
+
+        <div class="about-specs">
+          <div class="spec-item">
+            <span class="spec-label">COGNITION</span>
+            <p>Breaking problems down and understanding how smaller pieces build a system.</p>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">INTERESTS</span>
+            <p>Software development, hardware projects, and technical creativity.</p>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">EXPLORATION</span>
+            <p>Traveling to discover new cities, cultures, and global perspectives.</p>
+          </div>
+        </div>
+
+      </div> 
+    </div> 
   </section>
 
-  <section class="content-section" id="portfolio">
-    <div class="section-card">
-      <p class="section-eyebrow">Portfolio</p>
-      <h2>Projects & Engineering Work</h2>
+<section class="content-section" id="portfolio">
+  <div class="section-card portfolio-card">
+    
+    <div class="card-header">
+      <p class="section-metadata">// 02. SOURCE_FILES</p>
+      <div class="status-indicator">6_RECORDS_FOUND</div>
+    </div>
 
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="project-text">
-            <h3>Custom CPU Design</h3>
-            <p>
-              Designed and verified a custom CPU in SystemVerilog using test benches and
-              waveform debugging to validate datapath logic and instruction execution.
-            </p>
-            <span class="project-tech">SystemVerilog · GTKWave · Test Benches · Scripting</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/cpu.png" alt="CPU Project" />
-          </div>
+    <div class="portfolio-main">
+      <h2>Projects & <span class="highlight">Engineering</span> Work</h2>
+    </div>
+
+    <div class="project-grid">
+      
+      <div class="project-card">
+        <div class="project-text">
+          <h3>Custom CPU Design <em class="in-progress">(In Progress)</em></h3>
+          <p>
+            Designed and verified a custom CPU in SystemVerilog using test benches and
+            waveform debugging to validate datapath logic and instruction execution.
+          </p>
+          <span class="project-tech">> [ SystemVerilog, GTKWave, Scripting ]</span>
         </div>
-
-        <div class="project-card">
-          <div class="project-text">
-            <h3>FPGA Vehicle Project</h3>
-            <p>
-              Developed an FPGA-controlled vehicle integrating hardware communication,
-              soldering, and waveform debugging to verify real-time system behavior.
-            </p>
-            <span class="project-tech">SystemVerilog · Test Benches · Soldering · Hardware Communication · GTKWave</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/fpga-car.png" alt="FPGA Vehicle Project" />
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-text">
-            <h3>CRUD System</h3>
-            <p>
-              Built a CRUD-based application enabling structured database interaction
-              for storing, retrieving, and updating records.
-            </p>
-            <span class="project-tech">C · SQL</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/crud.png" alt="CRUD System" />
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-text">
-            <h3>Data Analysis Platform <em>(In Progress)</em></h3>
-            <p>
-              Developing a Python-based data analysis platform focused on pattern
-              recognition and machine learning integration.
-            </p>
-            <span class="project-tech">Python · Machine Learning</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/data-analysis.png" alt="Data Analysis Project" />
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-text">
-            <h3>Flappy Bird</h3>
-            <p>
-              Recreated the Flappy Bird game implementing movement logic,
-              collision detection, and interactive gameplay mechanics.
-            </p>
-            <span class="project-tech">Python</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/flappy-bird.png" alt="Flappy Bird Project" />
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-text">
-            <h3>Automated Plant Watering System</h3>
-            <p>
-              Developed two versions of an automated watering system with
-              live monitoring and real-time data representation.
-            </p>
-            <span class="project-tech">Java · MATLAB · Live Data Representation</span>
-          </div>
-          <div class="project-image">
-            <img src="/assets/projects/plant-watering.png" alt="Plant Watering Project" />
-          </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/Riscv.png" alt="CPU Project" />
         </div>
       </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>Data Analysis Platform <em class="in-progress">(In Progress)</em></h3>
+          <p>
+            Developing a Python-based data analysis platform focused on pattern
+            recognition and machine learning integration.
+          </p>
+          <span class="project-tech">> [ Python, Machine Learning, Data Analytics ]</span>
+        </div>
+        <!-- <div class="project-image">
+          <img src="/assets/projects/data-analysis.png" alt="Data Analysis Project" />
+        </div> -->
+      </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>FPGA Vehicle Project</h3>
+          <p>
+            Developed an FPGA-controlled vehicle integrating hardware communication,
+            soldering, and waveform debugging to verify real-time system behavior.
+          </p>
+          <span class="project-tech">> [ SystemVerilog, Hardware Comm, Soldering, 3D Modeling ]</span>
+          <div class="project-links">
+            <a href="https://github.com/Mayankneup/V2_RCCAR" target="_blank" rel="noopener noreferrer" class="link-btn">View_Source()</a>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/FPGA_Vehicle.png" alt="FPGA Vehicle Project" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>CRUD System</h3>
+          <p>
+            Built a CRUD-based application enabling structured database interaction
+            for storing, retrieving, and updating records.
+          </p>
+          <span class="project-tech">> [ C, SQL, Database Management ]</span>
+          <div class="project-links">
+            <a href="https://github.com/Mayankneup/Data_base" target="_blank" rel="noopener noreferrer" class="link-btn">View_Source()</a>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/CRUD.png" alt="CRUD System" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>Flappy Bird</h3>
+          <p>
+            Recreated the Flappy Bird game implementing movement logic,
+            collision detection, and interactive gameplay mechanics.
+          </p>
+          <span class="project-tech">> [ Python, Pygame, Game Logic ]</span>
+          <div class="project-links">
+            <a href="flappybird.mayankneup.com" target="_blank" rel="noopener noreferrer" class="link-btn">Run_Application()</a>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/Flappy_bird.png" alt="Flappy Bird Project" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>Automated Plant Watering System</h3>
+          <p>
+            Developed two versions of an automated watering system with
+            live monitoring and real-time data representation.
+          </p>
+          <span class="project-tech">> [ Java, MATLAB, Live Data Processing ]</span>
+          <div class="project-links">
+            <a href="https://github.com/Mayankneup/Automated_Plant_Watering_System_MATLAB-V1" target="_blank" rel="noopener noreferrer" class="link-btn">MATLAB_Source()</a>
+            <a href="https://github.com/Mayankneup/Automated-Planting-system-Java" target="_blank" rel="noopener noreferrer" class="link-btn">Java_Source()</a>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/Watering_system.png" alt="Plant Watering Project" />
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <div class="social-container">
-    <div class="social-links">
-      <a href="https://github.com/Mayankneup" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/social/github.png" alt="GitHub" />
-      </a>
-
-      <a href="https://www.linkedin.com/in/mayankneupane" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/social/linkedin.png" alt="LinkedIn" />
-      </a>
-
-      <a href="mailto:meetmemayank04@gmail.com">
-        <img src="/assets/social/email.png" alt="Email" />
-      </a>
-    </div>
-
-    <div class="social-line"></div>
   </div>
+</section>
 
-  <footer class="copyright">
-    <div class="footer-social">
-      <a href="https://github.com/Mayankneup" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/social/github.png" alt="GitHub" />
+<footer class="system-footer" id="contact">
+  <div class="footer-inner">
+    
+    <div class="footer-header">
+      <p class="section-metadata">// 03. NETWORK_LINKS</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://github.com/Mayankneup" target="_blank" rel="noopener noreferrer" class="footer-btn">
+        <span class="bracket">[</span> GitHub <span class="bracket">]</span>
       </a>
-
-      <a href="https://www.linkedin.com/in/mayankneupane" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/social/linkedin.png" alt="LinkedIn" />
+      <a href="https://www.linkedin.com/in/mayankneupane" target="_blank" rel="noopener noreferrer" class="footer-btn">
+        <span class="bracket">[</span> LinkedIn <span class="bracket">]</span>
       </a>
-
-      <a href="mailto:meetmemayank04@gmail.com">
-        <img src="/assets/social/email.png" alt="Email" />
+      <a href="mailto:meetmemayank04@gmail.com" class="footer-btn">
+        <span class="bracket">[</span> Ping_Email <span class="bracket">]</span>
       </a>
     </div>
 
-    <p>© 2026 Mayank Neupane. All rights reserved.</p>
-  </footer>
+    <div class="footer-log">
+      <p class="terminal-prompt">root@mayank-sys:~$ <span class="blinking-cursor">_</span></p>
+      <p class="copyright">© 2026 Mayank Neupane. All systems nominal.</p>
+    </div>
+
+  </div>
+</footer>
 
   <script type="module" src="/script.js"></script>
 </body>
