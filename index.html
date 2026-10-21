@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mayank Neupane</title>
+  <title>Mayank Neupane | Computer Engineering Portfolio</title>
+  <meta name="description" content="Computer Engineering student at York University building software and hardware systems. Explore a verified RV32I processor, a C employee management application, and hands-on engineering projects." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
@@ -62,9 +63,11 @@
         <div class="about-main">
           <h2>Curious about building things that connect <span class="highlight">software</span>, <span class="highlight">hardware</span>, and ideas.</h2>
           <p class="about-lead">
-            Hi, I’m Mayank Neupane, an engineering student who enjoys working across software, 
-            hardware, and problem solving. I like building systems, learning how things work, 
-            and turning ideas into projects that feel practical and well-designed.
+            Hi, I’m Mayank Neupane, a Computer Engineering student at York University.
+            I build software and hardware systems using C, Python, and SystemVerilog,
+            from a five-stage RISC-V processor to an employee management application.
+            My laboratory technician experience includes supporting engineering students
+            and troubleshooting computers, embedded systems, and laboratory equipment.
           </p>
         </div>
 
@@ -103,15 +106,39 @@
       
       <div class="project-card">
         <div class="project-text">
-          <h3>Custom CPU Design <em class="in-progress">(In Progress)</em></h3>
+          <h3>Five-Stage RISC-V Processor Core</h3>
           <p>
-            Designed and verified a custom CPU in SystemVerilog using test benches and
-            waveform debugging to validate datapath logic and instruction execution.
+            Implemented a 32-bit RV32I processor with a five-stage pipeline, data forwarding,
+            hazard detection, stalls, and branch flushing. Verified 17,848 retired instructions
+            against an independent Python reference model, passing 48 benchmarks and
+            3 focused pipeline regressions. GitHub Actions automates the verification checks.
           </p>
-          <span class="project-tech">> [ SystemVerilog, GTKWave, Scripting ]</span>
+          <span class="project-tech">> [ SystemVerilog, Python, Verilator, GitHub Actions ]</span>
+          <div class="project-links">
+            <a href="https://github.com/Mayankneup/5_stage_pipeline" target="_blank" rel="noopener noreferrer" class="link-btn">View_Source()</a>
+          </div>
         </div>
         <div class="project-image">
           <img src="/assets/Project_picture/Riscv.png" alt="CPU Project" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-text">
+          <h3>Employee Performance Management System</h3>
+          <p>
+            Built a modular C application with employee CRUD operations, dynamic memory
+            allocation, record search, performance sorting, binary storage, and SQL export.
+            Benchmarked 100–10,000 records, measuring median search and sort times of
+            0.458 ms and 0.925 ms for 10,000 records in local warm-cache tests.
+          </p>
+          <span class="project-tech">> [ C, SQL, Linux, Benchmarking ]</span>
+          <div class="project-links">
+            <a href="https://github.com/Mayankneup/Data_base" target="_blank" rel="noopener noreferrer" class="link-btn">View_Source()</a>
+          </div>
+        </div>
+        <div class="project-image">
+          <img src="/assets/Project_picture/CRUD.png" alt="Employee Performance Management System" />
         </div>
       </div>
 
@@ -143,23 +170,6 @@
         </div>
         <div class="project-image">
           <img src="/assets/Project_picture/FPGA_Vehicle.png" alt="FPGA Vehicle Project" />
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-text">
-          <h3>CRUD System</h3>
-          <p>
-            Built a CRUD-based application enabling structured database interaction
-            for storing, retrieving, and updating records.
-          </p>
-          <span class="project-tech">> [ C, SQL, Database Management ]</span>
-          <div class="project-links">
-            <a href="https://github.com/Mayankneup/Data_base" target="_blank" rel="noopener noreferrer" class="link-btn">View_Source()</a>
-          </div>
-        </div>
-        <div class="project-image">
-          <img src="/assets/Project_picture/CRUD.png" alt="CRUD System" />
         </div>
       </div>
 
